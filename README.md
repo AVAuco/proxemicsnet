@@ -1,7 +1,15 @@
 # Proxemics-Net
-Human interaction recognition in still images
 
 Code prepared for paper presented at the IbPRIA'23 Conference: [Proxemics-Net: Automatic Proxemics Recognition in Images](https://link.springer.com/chapter/10.1007/978-3-031-36616-1_32).
+
+## Abstract
+
+Proxemics is a branch of anthropology that studies how humans use personal space as a means of nonverbal communication; that is, it studies how people interact. Due to the presence of physical contact between people, in the problem of proxemics recognition in images, we have to deal with occlusions and ambiguities, which complicates the process of recognition. Several papers have proposed different methods and models to solve this problem in recent years. Over the last few years, the rapid advancement of powerful Deep Learning techniques has resulted in novel methods and approaches. So, we propose Proxemics-Net, a new model that allows us to study the performance of two state-of-the-art deep learning architectures, ConvNeXt and Visual Transformers (as backbones) on the problem of classifying different types of proxemics on still images. Experiments on the existing Proxemics dataset show that these deep learning models do help favorably in the problem of proxemics recognition since we considerably outperformed the existing state of the art, with the ConvNeXt architecture being the best-performing backbone.
+
+
+![Touch codes in Proxemics](img/proxemicsImg.png)
+*Figure 1: Touch codes in Proxemics. Images showing the six specific "touch codes" that were studied in this work.*
+
 
 ## 1. File Structure
 
@@ -29,8 +37,8 @@ To use the preprocessed dataset, you must first unzip the `dataset_proxemics_IbP
 
 To use pre-trained ConvNeXt models, you need to download them from the following locations:
 
-- Pre-trained Base model: [Download here](https://dl.fbaipublicfiles.com/convnext/convnext_base_22k_224.pth)
-- Pre-trained Large model: [Download here](https://dl.fbaipublicfiles.com/convnext/convnext_large_22k_224.pth)
+- Pre-trained Base model: [Download here](https://dl.fbaipublicfiles.com/convnext/convnext_base_22k_224.pth) (350MB)
+- Pre-trained Large model: [Download here](https://dl.fbaipublicfiles.com/convnext/convnext_large_22k_224.pth) (800MB)
 
 Once downloaded, you need to unzip them and place them one level above, i.e., in ../premodels/.
 
