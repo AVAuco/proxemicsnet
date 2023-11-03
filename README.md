@@ -59,3 +59,16 @@ To train and test a new model, you should access the `base_model_main` directory
     python3 base_model_main_convNext.py --datasetDIR <DIR dataset/> --outModelsDIR <DIR where you'll save the model> --modeltype <base/large> --b <batchsize> --set <set1/set2> --lr <learningRate> --onlyPairRGB
 
 Be sure to adjust the values between <...> with the specific paths and configurations required for your project.
+
+## References
+If you find Proxemics-Net useful in your work, please consider citing the following BibTeX entry:
+```bibtex
+@InProceedings{jimenezVelasco2023,
+   author = "Jiménez, I. and Muñoz, R. and Marín, M. J.",
+   title = "Proxemics-Net: Automatic Proxemics Recognition in Images",
+   booktitle = "Pattern Recogn. Image Anal.",
+   year = "2023",
+   pages = "402-413",
+   note= "IbPRIA 2023",
+   doi = "10.1007/978-3-031-36616-1_32"
+}
