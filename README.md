@@ -1,7 +1,7 @@
 # Proxemics-Net
 Human interaction recognition in still images
 
-Code prepared for paper presented at the IbPRIA 23 Conference.
+Code prepared for paper presented at the IbPRIA'23 Conference.
 
 ## 1. File Structure
 
