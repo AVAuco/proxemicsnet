@@ -4,11 +4,16 @@ Code prepared for paper presented at the IbPRIA'23 Conference: [Proxemics-Net: A
 
 ## Abstract
 
+![Touch codes in Proxemics](img/proxemicsImg.png)
+
+**Figure 1: Touch codes in Proxemics.** Images showing the six specific "touch codes" that were studied in this work.
+
 Proxemics is a branch of anthropology that studies how humans use personal space as a means of nonverbal communication; that is, it studies how people interact. Due to the presence of physical contact between people, in the problem of proxemics recognition in images, we have to deal with occlusions and ambiguities, which complicates the process of recognition. Several papers have proposed different methods and models to solve this problem in recent years. Over the last few years, the rapid advancement of powerful Deep Learning techniques has resulted in novel methods and approaches. So, we propose Proxemics-Net, a new model that allows us to study the performance of two state-of-the-art deep learning architectures, ConvNeXt and Visual Transformers (as backbones) on the problem of classifying different types of proxemics on still images. Experiments on the existing Proxemics dataset show that these deep learning models do help favorably in the problem of proxemics recognition since we considerably outperformed the existing state of the art, with the ConvNeXt architecture being the best-performing backbone.
 
 
-![Touch codes in Proxemics](img/proxemicsImg.png)
-*Figure 1: Touch codes in Proxemics. Images showing the six specific "touch codes" that were studied in this work.*
+![Our Proxemics-Net model](img/Proxemics-Net.png)
+
+**Figure 2: Our Proxemics-Net model.** It consists of the individual branches of each person (`p0_branch` and `p1_branch`) (blue) and the `pair branch` (red) as input. All branches consist of the same type of backbone (ConvNeXt or ViT). The outputs of these 3 branches are merged in a concatenation layer and passed through a fully connected layer that predicts the proxemic classes of the input samples.
 
 
 ## 1. File Structure
