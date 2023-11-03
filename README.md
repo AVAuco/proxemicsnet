@@ -6,9 +6,9 @@ Code prepared for paper presented at the IbPRIA'23 Conference.
 ## 1. File Structure
 
 - `base_model_main/`: Main directory for the base model.
-- `train/`: Directory containing code and resources related to model training.
-- `test/`: Directory containing code and resources related to model testing.
 - `dataset/`: Directory containing the code necessary for dataset preprocessing.
+- `test/`: Directory containing code and resources related to model testing.
+- `train/`: Directory containing code and resources related to model training.
 - `dataset_proxemics_IbPRIA.zip`: ZIP file containing the preprocessed dataset.
 - `requirements.txt`: File specifying the necessary dependencies for the project.
 
