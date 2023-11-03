@@ -20,6 +20,7 @@ Proxemics is a branch of anthropology that studies how humans use personal space
 
 - `base_model_main/`: Main directory for the base model.
 - `dataset/`: Directory containing the code necessary for dataset preprocessing.
+-  `ìmg/`: Directory containing the images of this work
 - `test/`: Directory containing code and resources related to model testing.
 - `train/`: Directory containing code and resources related to model training.
 - `dataset_proxemics_IbPRIA.zip`: ZIP file containing the preprocessed dataset.
