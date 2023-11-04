@@ -16,6 +16,27 @@ Proxemics is a branch of anthropology that studies how humans use personal space
 **Figure 2: Our Proxemics-Net model.** It consists of the individual branches of each person (`p0_branch` and `p1_branch`) (blue) and the `pair branch` (red) as input. All branches consist of the same type of backbone (ConvNeXt or ViT). The outputs of these 3 branches are merged in a concatenation layer and passed through a fully connected layer that predicts the proxemic classes of the input samples.
 
 
+## Comparison to the State of the Art
+
+| Model                        | HH   | HS   | SS   | HT   | HE   | ES   | mAP (a) | mAP (b) |
+|------------------------------|------|------|------|------|------|------|---------|---------|
+| [Yang et al.](https://doi.org/10.1109/CVPR.2012.6248095)                  | 37   | 29   | 50   | 61   | 38   | 34   | 42      | 38      |
+| [Chu et al.](https://doi.org/10.1109/ICCV.2015.383)                  | 41.2 | 35.4 | 62.2 | -    | 43.9 | 55   | -       | 46.6    |
+| [Jiang et al.](https://doi.org/10.1109/CVPR.2017.366)                 | 59.7 | 52   | 53.9 | 33.2 | 36.1 | 36.2 | 45.2    | 47.5    |
+| Our ViT                      | 48.2 | 57.6 | 50.4 | 76.6 | 57.6 | 52.8 | 57.2    | 53.3    |
+| Our ConvNeXt_Base            | 56.9 | **53.4** | 61.4 | 83.4 | 68.7 | 58.8 | 63.8    | 59.8    |
+| Our ConvNeXt_Large           | **62.4** | 56.7 | **62.4** | **86.4** | **68.8** | **67.9** | **67.4**    | **63.8**    |
+
+
+Table compares our three best models concerning the existing state of the art.
+
+In this Table, two values of %mAP are compared: mAP(a) is the value of mAP explained in the previous sections (the mean of the AP values of the six types of proxemics) and mAP(b) is the mean of the AP values but excluding the Hand-Torso (HT) class as done in Chu et al.
+
+Looking at the table, we can see that our three proposed models (which use three branches as input) perform the best in both comparatives (mAP(a-b)), with the model that uses the ConvNeXt network as a backbone achieving the highest %mAP value (67.4% vs 47.5% mAP(a) and 63.8% vs 47.5% mAP(b)). Thus, we outperformed the existing state of the art by a significant margin, with improvements of up to 19.9% of %AP (mAP(a)) and 16.3% of %mAP (mAP(b)).
+
+Therefore, these results demonstrate that the two state-of-the-art deep learning models (ConvNeXt and Vision Transformers) do help in the proxemics recognition problem since, using only RGB information, they can considerably improve the results obtained by all competing models.
+
+
 ## 1. File Structure
 
 - `base_model_main/`: Main directory for the base model.
