@@ -57,7 +57,7 @@ Therefore, these results demonstrate that the two state-of-the-art deep learning
 
 ---
 
-## :rocket:What's new??
+## :rocket: What's new?
 
 - `base_model_main/`: Main directory for the base model.
 - `dataset/`: Directory containing the code necessary for dataset preprocessing.
@@ -68,20 +68,20 @@ Therefore, these results demonstrate that the two state-of-the-art deep learning
 - `requirements.txt`: File specifying the necessary dependencies for the project.
 
 
-## :star2:Quick Start
-###  :black_small_square:Installing Dependencies
+## :star2: Quick Start
+###  :black_small_square: Installing Dependencies
 
 To install the necessary dependencies to run this project, you can use the following command:
 
     conda create --name <env> --file requirements.txt
 
-###  :black_small_square:Unzipping the Preprocessed Dataset ZIP
+###  :black_small_square: Unzipping the Preprocessed Dataset ZIP
 
 To use the preprocessed dataset, you must first unzip the `dataset_proxemics_IbPRIA.zip` file and place it two directories above the current directory. You can use the following command:
 
     unzip dataset_proxemics_IbPRIA.zip -d ../
 
-###  :black_small_square:Downloading the pre-trained ConvNeXt models
+###  :black_small_square: Downloading the pre-trained ConvNeXt models
 
 To use the pre-trained ConvNeXt models that we have selected as a backbone to train our Proxemics-Net models, you need to download them from the following locations:
 
@@ -90,7 +90,7 @@ To use the pre-trained ConvNeXt models that we have selected as a backbone to tr
 
 Once downloaded, you need to unzip them and place them one level above, i.e., in ../premodels/.
 
-###  :black_small_square:Training a New Model
+###  :black_small_square: Training a New Model
 
 To train and test a new model, you should access the `base_model_main` directory and execute the following command lines based on the type of model you want to use:
 
@@ -116,7 +116,7 @@ To train and test a new model, you should access the `base_model_main` directory
 
 Be sure to adjust the values between <...> with the specific paths and configurations required for your project.
 
-###  :black_small_square:Downloading the Proxemics-Net models we have trained
+###  :black_small_square: Downloading the Proxemics-Net models we have trained
 Here are 2 of the Proxemics-Net models that we have trained.
 
    * A model with ConvNeXt Large as backbone. This model has been the one with the best results (see SOTA table). It has been trained with RGB information of the individual clippings and the pairs (the 3 input branches). [Download here](https://drive.google.com/file/d/1spczxf4KHiWzvKCCueWia2cN19x1mZgP/view?usp=sharing) (4.45GB)
@@ -126,7 +126,7 @@ Here are 2 of the Proxemics-Net models that we have trained.
    :star_struck: **You can test these models in the Google Colab [Demo](https://colab.research.google.com/drive/1ueD8UFvWvFYK-MFL-GO3gteqIAXaM2LT?usp=sharing) we have prepared for you.**
 
 
-## :memo:Citing Proxemics-Net
+## :memo: Citing Proxemics-Net
 If you find Proxemics-Net useful in your work, please consider citing the following BibTeX entry:
 ```bibtex
 @InProceedings{jimenezVelasco2023,
