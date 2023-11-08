@@ -2,6 +2,12 @@
 
 Code prepared for paper presented at the IbPRIA'23 Conference: [Proxemics-Net: Automatic Proxemics Recognition in Images](https://link.springer.com/chapter/10.1007/978-3-031-36616-1_32).
 
+:page_facing_up: [Paper](https://link.springer.com/chapter/10.1007/978-3-031-36616-1_32).
+
+[<img src="https://camo.githubusercontent.com/0b93f22ac70b7983e9915edf30ddc1a15713b2c310a214c2996dff49b410b949/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3236373335363138303036343530313736302f3738313937313935303438363239303433322f476f6f676c655f436f6c61626f7261746f72792e737667" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/> 
+
+
+
 ## Abstract
 
 ![Touch codes in Proxemics](img/proxemicsImg.png)
@@ -16,7 +22,7 @@ Proxemics is a branch of anthropology that studies how humans use personal space
 **Figure 2: Our Proxemics-Net model.** It consists of the individual branches of each person (`p0_branch` and `p1_branch`) (blue) and the `pair branch` (red) as input. All branches consist of the same type of backbone (ConvNeXt or ViT). The outputs of these 3 branches are merged in a concatenation layer and passed through a fully connected layer that predicts the proxemic classes of the input samples.
 
 
-## Comparison to the State of the Art
+## :chart_with_upwards_trend: Comparison to the State of the Art
 
 | Model                        | HH   | HS   | SS   | HT   | HE   | ES   | mAP (a) | mAP (b) |
 |------------------------------|------|------|------|------|------|------|---------|---------|
@@ -36,12 +42,19 @@ Looking at the table, we can see that our three proposed models (which use three
 
 Therefore, these results demonstrate that the two state-of-the-art deep learning models (ConvNeXt and Vision Transformers) do help in the proxemics recognition problem since, using only RGB information, they can considerably improve the results obtained by all competing models.
 
+Getting Started
 
-## 1. File Structure
+See Getting Started with Detectron2, and the Colab Notebook to learn about basic usage.
+
+Learn more at our documentation. And see projects/ for some projects that are built on top of detectron2.
+
+
+
+## 1. Directory structure 
 
 - `base_model_main/`: Main directory for the base model.
 - `dataset/`: Directory containing the code necessary for dataset preprocessing.
--  `ìmg/`: Directory containing the images of this work
+- `ìmg/`: Directory containing the images of this work
 - `test/`: Directory containing code and resources related to model testing.
 - `train/`: Directory containing code and resources related to model training.
 - `dataset_proxemics_IbPRIA.zip`: ZIP file containing the preprocessed dataset.
@@ -62,7 +75,7 @@ To use the preprocessed dataset, you must first unzip the `dataset_proxemics_IbP
 
 ## 4. Downloading Pre-Trained Models
 
-To use pre-trained ConvNeXt models, you need to download them from the following locations:
+To use the pre-trained ConvNeXt models that we have selected as a backbone to train our Proxemics-Net models, you need to download them from the following locations:
 
 - Pre-trained Base model: [Download here](https://dl.fbaipublicfiles.com/convnext/convnext_base_22k_224.pth) (350MB)
 - Pre-trained Large model: [Download here](https://dl.fbaipublicfiles.com/convnext/convnext_large_22k_224.pth) (800MB)
@@ -95,7 +108,7 @@ To train and test a new model, you should access the `base_model_main` directory
 
 Be sure to adjust the values between <...> with the specific paths and configurations required for your project.
 
-## References
+## Citing Proxemics-Net
 If you find Proxemics-Net useful in your work, please consider citing the following BibTeX entry:
 ```bibtex
 @InProceedings{jimenezVelasco2023,
