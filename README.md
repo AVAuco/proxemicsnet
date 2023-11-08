@@ -8,6 +8,9 @@
 </div>
 
 
+&nbsp;
+
+
 <p align="center">
     <img src="img/proxemicsImg.png" alt="Touch codes in Proxemics" width="700">
 </p>
@@ -15,11 +18,11 @@
     <sub><strong>Figure 1: Touch codes in Proxemics.</strong> Images showing the six specific "touch codes" that were studied in this work.</sub>
 </p>
 
-
+&nbsp;
 
 Proxemics is a branch of anthropology that studies how humans use personal space as a means of nonverbal communication; that is, it studies how people interact. Due to the presence of physical contact between people, in the problem of proxemics recognition in images, we have to deal with occlusions and ambiguities, which complicates the process of recognition. Several papers have proposed different methods and models to solve this problem in recent years. Over the last few years, the rapid advancement of powerful Deep Learning techniques has resulted in novel methods and approaches. So, we propose Proxemics-Net, a new model that allows us to study the performance of two state-of-the-art deep learning architectures, ConvNeXt and Visual Transformers (as backbones) on the problem of classifying different types of proxemics on still images. Experiments on the existing Proxemics dataset show that these deep learning models do help favorably in the problem of proxemics recognition since we considerably outperformed the existing state of the art, with the ConvNeXt architecture being the best-performing backbone.
 
-
+&nbsp;
 <p align="center">
     <img src="img/Proxemics-Net.png" alt="Our Proxemics-Net model" width="700">
 </p>
@@ -28,7 +31,7 @@ Proxemics is a branch of anthropology that studies how humans use personal space
 </p>
 
 
-
+&nbsp;
 
 ### :chart_with_upwards_trend: Comparison to the State of the Art
 <div align="center">
@@ -47,7 +50,7 @@ Proxemics is a branch of anthropology that studies how humans use personal space
 <p align="center">
 <sub><strong>Table 1:</strong> Table compares our three best models concerning the existing state of the art.</sub>
 </p>
-
+&nbsp;
 
 In this Table, two values of %mAP are compared: mAP(a) is the value of mAP explained in the previous sections (the mean of the AP values of the six types of proxemics) and mAP(b) is the mean of the AP values but excluding the Hand-Torso (HT) class as done in Chu et al.
 
@@ -55,8 +58,11 @@ Looking at the table, we can see that our three proposed models (which use three
 
 Therefore, these results demonstrate that the two state-of-the-art deep learning models (ConvNeXt and Vision Transformers) do help in the proxemics recognition problem since, using only RGB information, they can considerably improve the results obtained by all competing models.
 
+&nbsp;
+
 ---
 
+&nbsp;
 ## :rocket: What's new?
 
 - `base_model_main/`: Main directory for the base model.
@@ -67,6 +73,7 @@ Therefore, these results demonstrate that the two state-of-the-art deep learning
 - `dataset_proxemics_IbPRIA.zip`: ZIP file containing the preprocessed dataset.
 - `requirements.txt`: File specifying the necessary dependencies for the project.
 
+&nbsp;
 
 ## :star2: Quick Start
 ###  :black_small_square: Installing Dependencies
@@ -125,7 +132,7 @@ Here are 2 of the Proxemics-Net models that we have trained.
    
    :star_struck: **You can test these models in the Google Colab [Demo](https://colab.research.google.com/drive/1ueD8UFvWvFYK-MFL-GO3gteqIAXaM2LT?usp=sharing) we have prepared for you.**
 
-
+&nbsp;
 ## :memo: Citing Proxemics-Net
 If you find Proxemics-Net useful in your work, please consider citing the following BibTeX entry:
 ```bibtex
