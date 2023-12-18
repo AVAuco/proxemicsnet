@@ -498,7 +498,7 @@ def get_basemodel_convNext(model_gcs_path,lr,optimizador, typeImg, onlyPairRGB, 
   # 9. Optimizer
   if optimizador=='Adam':
     opt = tf.keras.optimizers.Adam(learning_rate=lr)
-  if optimizador=='AdamW':
+  elif optimizador=='AdamW':
     opt = tf.keras.optimizers.experimental.AdamW(learning_rate=lr)
   else:
     opt = tf.keras.optimizers.SGD(learning_rate=lr)
