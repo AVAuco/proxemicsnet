@@ -1,15 +1,29 @@
 # Proxemics-Net: Automatic Proxemics Recognition in Images
 
+### 🚀 **NEW (29/04/2024):** Check out Our New Article! 🚀
+
+We are excited to announce that our work has led to a new article. Explore more about our latest findings and advancements.
 
 <div align="center">
 
-   :page_facing_up: [Paper](https://link.springer.com/chapter/10.1007/978-3-031-36616-1_32) &nbsp; | &nbsp; [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ueD8UFvWvFYK-MFL-GO3gteqIAXaM2LT?usp=sharing)
+[![Visit the New Article](https://img.shields.io/badge/Visit%20the%20New%20Article%20on-GitHub-blue?style=for-the-badge&logo=github)](https://github.com/AVAuco/proxemicsnetplus)
+</div>
+&nbsp;
+
+
+### 📚 Support Code for Proxemics-Net Method
+
+Developed by **Isabel Jiménez-Velasco**, **Rafael Muñoz-Salinas**, and **Manuel J. Marín-Jiménez**.
+
+<div align="center">
+
+   [![DOI](https://zenodo.org/badge/DOI/10.1007/978-3-031-36616-1_32.svg)](https://link.springer.com/chapter/10.1007/978-3-031-36616-1_32) &nbsp; | &nbsp; [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ueD8UFvWvFYK-MFL-GO3gteqIAXaM2LT?usp=sharing)
 
 </div>
 
 
-&nbsp;
 
+&nbsp;
 
 <p align="center">
     <img src="img/proxemicsImg.png" alt="Touch codes in Proxemics" width="700">
